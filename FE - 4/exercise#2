@@ -1,0 +1,29 @@
+//IIFE FUNCTION
+const angka = 97;
+
+let result = (function(angka) {
+    if (angka % 2 === 0) {
+        return angka + " adalah bilangan genap";
+    } else {
+        return angka + " adalah bilangan ganjil";
+    }
+})(angka);
+console.log(result);
+
+
+//CALLBACK FUNCTION
+// function cekBilangan(angka, callback) {
+//     if (angka % 2 === 0) {
+//         callback(angka + " adalah bilangan genap");
+//     } else {
+//         callback(angka + " adalah bilangan ganjil");
+//     }
+// }
+
+// function tampilkanPesan(pesan) {
+//     console.log(pesan);
+// }
+
+// let angka = 97;
+// cekBilangan(angka, tampilkanPesan);
+
